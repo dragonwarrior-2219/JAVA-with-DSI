@@ -5,13 +5,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a year: ");
-        int x =scanner.nextInt();
-        if(x%4==0){
-            System.out.println("It is a leap year");
+        int x = scan.nextInt();
+        int y = x%4==0 && x%100!=0 || x %400 == 0;
+        y ? "Leap Year" : "Not a leap year";
+        System.out.print(y);
         }
-        else {
-            System.out.println("It is not a leap year"); 
-            }
-    }
 }
         
